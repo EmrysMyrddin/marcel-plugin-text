@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Iframe Test</title>
+  <script src="./marcel.js"></script>
+</head>
+
+<body>
+
+  <p id="content"></p>
+
+  <script>
+    class Text extends Marcel.Plugin {
+      constructor() {
+        super({
+          defaultProps: {
+            text: '',
+            textAlign: 'center',
+            stylesvar: {}
+          },
+        })
+
+        this.p = document.getElementById('content')
+      }
+
+      render() {
+        const { text, stylesvar, color, fontFamily, textAlign, fontSize } = this.props
+
+        this.p.innerText = text
+
+        if (color) this.p.style.color = color
+        else if (stylesvar['primary-color']) this.p.style.color = stylesvar['primary-color']
+
+        if (fontFamily) this.p.style.fontFamily = fontFamily
+        else if (stylesvar['font-family']) this.p.style.fontFamily = stylesvar['font-family']
+
+        if (fontSize) this.p.style.fontSize = fontSize
+
+        this.p.style.textAlign = textAlign
+      }
+    }
+
+    const instance = new Text()
+  </script>
+</body>
+
+</html>
