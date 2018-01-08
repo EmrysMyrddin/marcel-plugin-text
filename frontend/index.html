@@ -3,13 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Iframe Test</title>
   <script src="./marcel.js"></script>
 </head>
 
 <body>
 
   <p id="content"></p>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
 
   <script>
     class Text extends Marcel.Plugin {
