@@ -1,0 +1,40 @@
+{
+  "name": "Text",
+  "eltName": "marcel-plugin-text",
+  "icon": "picture_in_picture_alt",
+  "frontend": {
+    "props": [
+      {
+        "name": "text",
+        "description": "The text to be displayed",
+        "type": "string",
+        "value": ""
+      },
+      {
+        "name": "color",
+        "descriptions": "Define the text's color. Default is the global media primary color.",
+        "type": "string",
+        "value": ""
+      },
+      {
+        "name": "textAlign",
+        "descriptions": "Define the horizontal alignement of text",
+        "type": "string",
+        "value": "center"
+      },
+      {
+        "name": "fontFamily",
+        "descriptions": "Define the font family. Default is the global media font family.",
+        "type": "string",
+        "value": ""
+      },
+      {
+        "name": "fontSize",
+        "descriptions":
+          "Define the size of the text. Should include the unit like '16px' or '2em'.",
+        "type": "string",
+        "value": ""
+      }
+    ]
+  }
+}
