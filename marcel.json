@@ -1,5 +1,6 @@
 {
   "name": "Text",
+  "description": "A simple plugin which display a text with configurable style",
   "eltName": "marcel-plugin-text",
   "icon": "picture_in_picture_alt",
   "frontend": {
